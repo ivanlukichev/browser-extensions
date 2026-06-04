@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="440" height="280" viewBox="0 0 440 280">
+  <defs>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#7ce0d0"/>
+      <stop offset="100%" stop-color="#f8d28a"/>
+    </linearGradient>
+    <linearGradient id="bar" x1="0" y1="1" x2="0" y2="0">
+      <stop offset="0%" stop-color="#7ce0d0"/>
+      <stop offset="100%" stop-color="#f8d28a"/>
+    </linearGradient>
+    <linearGradient id="primary" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#7ce0d0"/>
+      <stop offset="100%" stop-color="#aaf3e8"/>
+    </linearGradient>
+    <linearGradient id="bgGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#101a1d"/>
+      <stop offset="55%" stop-color="#0f1518"/>
+      <stop offset="100%" stop-color="#0b1113"/>
+    </linearGradient>
+  </defs>
+<rect width="440" height="280" fill="url(#bgGrad)"/><rect x="40" y="48" width="64" height="64" rx="18" fill="#1d282d"/><rect x="56.6" y="81.8" width="5.1" height="16.1" rx="2.6" fill="url(#bar)"/><rect x="66.9" y="72.1" width="5.1" height="25.8" rx="2.6" fill="url(#bar)"/><rect x="77.1" y="62.1" width="5.1" height="35.8" rx="2.6" fill="url(#bar)"/><rect x="87.4" y="76.4" width="5.1" height="21.5" rx="2.6" fill="url(#bar)"/><text x="40" y="160" font-family="-apple-system, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="34" font-weight="800" fill="#eef5f4">HowLoud</text><text x="42" y="190" font-family="-apple-system, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="17" font-weight="600" fill="#7ce0d0">Sound Meter</text><text x="40" y="230" font-family="-apple-system, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="14.5" fill="#9fb2b3">Ambient noise, measured</text><text x="40" y="252" font-family="-apple-system, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="14.5" fill="#9fb2b3">right in your browser.</text></svg>

@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="HowLoud Sound Meter">
+  <defs>
+    <linearGradient id="g" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#7ce0d0"/>
+      <stop offset="100%" stop-color="#f8d28a"/>
+    </linearGradient>
+  </defs>
+  <rect width="64" height="64" rx="18" fill="#0f1518"/>
+  <g fill="url(#g)">
+    <rect x="14" y="34" width="6" height="16" rx="3"/>
+    <rect x="24" y="26" width="6" height="24" rx="3"/>
+    <rect x="34" y="16" width="6" height="34" rx="3"/>
+    <rect x="44" y="28" width="6" height="22" rx="3"/>
+  </g>
+</svg>

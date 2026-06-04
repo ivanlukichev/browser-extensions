@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HowLoud — Microphone access</title>
+  <link rel="stylesheet" href="popup.css" />
+  <style>
+    body { width: auto; }
+    .perm-shell {
+      max-width: 460px;
+      margin: 0 auto;
+      padding: 48px 24px;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      gap: 18px;
+      align-items: center;
+    }
+    .perm-shell h1 { font-size: 1.4rem; }
+    .perm-shell p { margin: 0; color: var(--muted); line-height: 1.5; font-size: 0.9rem; }
+    .perm-shell .button { min-width: 220px; }
+    .perm-state { font-weight: 700; font-size: 0.95rem; min-height: 1.4em; }
+    .perm-state[data-tone="ok"] { color: var(--accent); }
+    .perm-state[data-tone="bad"] { color: var(--alert); }
+  </style>
+</head>
+<body>
+  <main class="perm-shell">
+    <div class="brand-mark" aria-hidden="true" style="width:48px;height:48px;border-radius:14px;">
+      <span></span><span></span><span></span><span></span>
+    </div>
+    <h1 data-copy="permTitle">Allow microphone access</h1>
+    <p data-copy="permBody">
+      HowLoud needs one-time permission to read your microphone so it can estimate the sound level.
+      No audio is ever recorded or stored — everything runs locally.
+    </p>
+    <button class="button button--primary" id="grantButton" type="button" data-copy="permGrant">Allow microphone</button>
+    <p class="perm-state" id="permState" data-tone="" aria-live="polite"></p>
+    <p data-copy="permAfter">After allowing, close this tab and open the HowLoud meter again from the toolbar.</p>
+  </main>
+  <script src="permission.js"></script>
+</body>
+</html>

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HowLoud — Sound Meter</title>
+  <link rel="stylesheet" href="popup.css" />
+</head>
+<body>
+  <main class="popup-shell" data-sound-meter>
+    <header class="popup-head">
+      <div class="brand-lockup">
+        <div class="brand-mark" aria-hidden="true">
+          <span></span><span></span><span></span><span></span>
+        </div>
+        <div>
+          <p class="eyebrow" data-copy="eyebrow">Sound meter</p>
+          <h1 data-copy="title">HowLoud</h1>
+        </div>
+      </div>
+      <div class="status-pill" data-meter-status data-tone="idle" aria-live="polite">Idle</div>
+    </header>
+
+    <div class="audio-unsupported" data-meter-unsupported hidden data-copy="unsupported">
+      Your browser does not support real-time microphone measurement.
+    </div>
+
+    <section class="reading" aria-label="Current estimate">
+      <div class="reading__value">
+        <span data-meter-current>--</span>
+        <span class="reading__unit">dB</span>
+      </div>
+      <p class="reading__label" data-meter-current-label>Current estimate</p>
+    </section>
+
+    <div class="gauge" aria-hidden="true">
+      <div class="gauge__track">
+        <div class="gauge__fill" data-meter-fill></div>
+      </div>
+      <div class="gauge__labels">
+        <span data-copy="zVeryQuiet">Very Quiet</span>
+        <span data-copy="zQuiet">Quiet</span>
+        <span data-copy="zModerate">Moderate</span>
+        <span data-copy="zLoud">Loud</span>
+        <span data-copy="zVeryLoud">Very Loud</span>
+      </div>
+    </div>
+
+    <div class="zone" data-meter-zone="quiet">
+      <span class="zone__eyebrow" data-copy="noiseZone">Noise zone</span>
+      <strong class="zone__value" data-meter-zone-value>--</strong>
+    </div>
+
+    <div class="stats">
+      <div class="stat">
+        <span class="stat__label" data-copy="min">Min</span>
+        <strong class="stat__value" data-meter-min>--</strong>
+      </div>
+      <div class="stat">
+        <span class="stat__label" data-copy="avg">Avg</span>
+        <strong class="stat__value" data-meter-avg>--</strong>
+      </div>
+      <div class="stat">
+        <span class="stat__label" data-copy="max">Max</span>
+        <strong class="stat__value" data-meter-max>--</strong>
+      </div>
+    </div>
+
+    <p class="message" data-meter-message aria-live="polite">
+      Press Start and allow microphone access to estimate the sound level around you.
+    </p>
+
+    <div class="buttons">
+      <button class="button button--primary" data-meter-start type="button" data-copy="start">Start</button>
+      <button class="button button--secondary" data-meter-stop type="button" disabled data-copy="stop">Stop</button>
+      <button class="button button--ghost" data-meter-reset type="button" data-copy="reset">Reset</button>
+    </div>
+
+    <button class="permission-cta" data-meter-permission-cta type="button" hidden data-copy="grantAccess">
+      Open microphone permission page
+    </button>
+
+    <p class="disclaimer" data-copy="disclaimer">
+      Approximate estimate from your device microphone — not a certified acoustic measurement.
+    </p>
+
+    <footer class="popup-footer">
+      <p class="privacy-note" data-copy="noStore">
+        🔒 No audio is recorded or stored. Everything runs locally on your device.
+      </p>
+      <nav class="footer-links" aria-label="Links">
+        <a data-link="web" href="#" data-copy="openOnWeb">Open on the web</a>
+        <a data-link="privacy" href="#" data-copy="privacy">Privacy</a>
+        <a data-link="terms" href="#" data-copy="terms">Terms</a>
+      </nav>
+      <div class="app-links">
+        <a class="app-link" data-link="ios" href="#" target="_blank" rel="noopener">
+          <span class="app-link__sub" data-copy="getOn">Get it on</span>
+          <span class="app-link__name">App Store</span>
+        </a>
+        <span class="app-link app-link--soon">
+          <span class="app-link__sub" data-copy="getOn">Get it on</span>
+          <span class="app-link__name">Google Play <em data-copy="soon">soon</em></span>
+        </span>
+      </div>
+    </footer>
+  </main>
+
+  <script src="popup.js"></script>
+</body>
+</html>
