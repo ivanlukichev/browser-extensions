@@ -57,3 +57,7 @@ https://github.com/ivanlukichev/browser-extensions/tree/main/<extension>
    existing one as a starting point — `chromium`/`edge`/`opera` are identical).
 2. Add `STORE_LISTING.md` and a `README.md`.
 3. `scripts/package.sh <extension>` to produce upload zips.
+
+## License
+
+[MIT](LICENSE) © Ivan Lukichev. Applies to all extensions in this repository.
